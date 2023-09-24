@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(230, 239, 245);
+    }
+    .feedback-btns {
+      margin-top: 20px;
+    }
+    .feedback-btn {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: inline-block; /* Display buttons side by side */
+      text-align: center; /* Center the icon and text */
+      vertical-align: middle; /* Vertically center the icon and text */
+    }
+    .good-result {
+      background-color: rgb(88, 180, 88);
+      color: white;
+    }
+    .bad-result {
+      background-color: rgb(255, 0, 0);
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  <h1 style="color: rgb(88, 180, 88); font-weight: 900;">
+    {{ answer }}<br>
+
+    <small> Want to recheck? <a href="{% url 'home' %}">Click</a></small>
+  </h1>
+
+  <div class="feedback-btns">
+    <button class="feedback-btn good-result" onclick="showThankYou()"><i class="fas fa-thumbs-up"></i></button>
+    <button class="feedback-btn bad-result" onclick="showWorkOnIt()"><i class="fas fa-thumbs-down"></i></button>
+  </div>
+
+  <script>
+    function showThankYou() {
+      alert("Thank you for your feedback!");
+    }
+
+    function showWorkOnIt() {
+      alert("We appreciate your feedback. We will work on improving.");
+    }
+  </script>
+
+</body>
+
+</html>

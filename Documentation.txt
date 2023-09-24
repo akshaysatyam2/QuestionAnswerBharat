@@ -1,0 +1,54 @@
+Project Documentation: Exploring India's 'Bhārata' Term with a Django-based QA Model
+
+Introduction:
+This project revolves around a Django-based Question Answering (QA) model that delves into the significance of India's 'Bhārata' term. By utilizing the 'deepset/roberta-base-squad2' model from Hugging Face, it can answer cultural questions related to this term. The primary objective is to provide insights into the origins and cultural significance of "Bhārata" within India's historical heritage.
+
+Project Components:
+1. Model File:
+   - The 'Model File' directory houses the QA model and the data used as context.
+   - Leveraging the Hugging Face Transformers library, this project employs the 'deepset/roberta-base-squad2' model to facilitate user queries about "Bhārata."
+   - It also contains a context file, which provides the necessary data for meaningful conversations.
+
+Why 'deepset/roberta-base-squad2'?
+The choice of the 'deepset/roberta-base-squad2' model is driven by its exceptional performance in question-answering tasks. It is built upon the RoBERTa architecture, benefiting from extensive pretraining on a diverse text corpus. Fine-tuning on the challenging SQuAD 2.0 dataset further enhances its ability to handle questions with uncertain answers. Availability through the Hugging Face Transformers library adds to its suitability for question-answering applications. The selection of a model depends on specific task requirements and often involves experimentation.
+
+Postprocessing:
+The raw data for this project is sourced from Wikipedia. A data cleaning process is applied to prepare the text, and AI tools are utilized to restructure it to align with the model's requirements.
+
+2. QuestionAnswer:
+   - The 'QuestionAnswer' directory contains a fully functional Django web application that implements the QA model.
+   - This web application also includes a feedback mechanism for user interaction.
+
+Working with the Django Project:
+
+Software Requirements:
+Ensure you have the following Python libraries and dependencies installed:
+1. Transformers
+2. Django
+3. NumPy
+4. Pandas
+5. Pickle
+6. Bootstrap
+7. TensorFlow
+8. PyTorch
+
+Setup Instructions:
+
+1. Model File:
+   - Import the model file and execute all its components.
+
+2. Django Project:
+   a) Clone the project repository.
+   b) Optionally, make migrations using the following commands:
+      ```
+      python manage.py makemigrations
+      python manage.py migrate
+      ```
+   c) Run the Django development server:
+      ```
+      python manage.py runserver
+      ```
+
+Note: If you encounter any errors during setup or usage, feel free to seek assistance or search for solutions online.
+
+This project aims to provide valuable insights into the cultural and historical aspects of India's 'Bhārata' term while demonstrating the capabilities of the 'deepset/roberta-base-squad2' model in question-answering applications.

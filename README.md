@@ -11,7 +11,7 @@ This project revolves around a Django-based Question Answering (QA) model that d
 - It also contains a context file, which provides the necessary data for meaningful conversations.
 
 #### Why 'deepset/roberta-base-squad2'?
-The choice of the 'deepset/roberta-base-squad2' model is driven by its exceptional performance in question-answering tasks. It is built upon the RoBERTa architecture, benefiting from extensive pretraining on a diverse text corpus. Fine-tuning on the challenging SQuAD 2.0 dataset further enhances its ability to handle questions with uncertain answers. Availability through the Hugging Face Transformers library adds to its suitability for question-answering applications. The selection of a model depends on specific task requirements and often involves experimentation.
+The choice of the 'deepset/roberta-base-squad2' model is driven by its exceptional performance in question-answering tasks. It is built upon the RoBERTa architecture, benefiting from extensive pretraining on a diverse text corpus. Additionally, this model is considered as one of the best models.
 
 #### Postprocessing
 The raw data for this project is sourced from Wikipedia. A data cleaning process is applied to prepare the text, and AI tools are utilized to restructure it to align with the model's requirements.
